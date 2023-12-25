@@ -1,22 +1,136 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Raz</title>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <title>John Doe - Portfolio</title>
     <style>
-      p.first {
-        font-weight: bold;
-      }
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: linear-gradient(to right, #222, #444);
+            color: #fff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(to right, #555, #333);
+            color: #fff;
+            padding: 1em;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 100%;
+        }
+
+        section {
+            width: 100%;
+            max-width: 800px;
+            margin: 2em auto;
+            padding: 1em;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .project {
+            border-bottom: 1px solid #ddd;
+            padding: 1em 0;
+        }
+
+        .project img {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+
+        footer {
+            padding: 1em;
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            width: 100%;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: linear-gradient(to right, #333, #555);
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background 0.3s;
+            margin: 0 10px;
+            font-weight: 700;
+        }
+
+        button:hover {
+            background: linear-gradient(to right, #555, #777);
+        }
     </style>
-  </head>
-  <body>
-    <h3 style="font-family: montserrat">Raz's second attempt at making a site</h3>
-    <p class="first" style="font-size: 400; font-family: montserrat">
-      This is my first Paragraph
-    </p>
-    <p class="second" style="font-size: 400; font-family: montserrat">
-      This is my second Paragraph
-    </p>
-    <h1 style="font-family: montserrat">A sentence but bigger and better</h1>
-    <br />
-  </body>
+</head>
+
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Undergraduate in Computer Science</p>
+    </header>
+
+    <section>
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Project 1 Image Placeholder">
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <img src="https://via.placeholder.com/800x400" alt="Project 2 Image Placeholder">
+        </div>
+    </section>
+
+    <section>
+        <h2>Contact</h2>
+        <button>Send Message</button>
+        <button>Resume</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 John Doe - Computer Science Portfolio</p>
+    </footer>
+</body>
+
 </html>
